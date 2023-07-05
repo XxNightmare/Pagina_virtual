@@ -11,7 +11,7 @@ include('conexion.php');
     //Verifica si el radio button "SI" ha sido seleccionado y asigna 1 a $es_admin en caso afirmativo
     $es_admin = isset($_POST['es_admin']) && $_POST['es_admin'] == 'es_admin' ? 1 : 0;
 
-    $query = "INSERT INTO usuarios (nombre, apellidos, email, pass, sexo, telefono, admin) VALUES ('$nombre', '$apellidos', '$correo', '$contrasena', '$sexo', '$telefono', '$es_admin')";
+    $query = "INSERT INTO usuarios (nombre, apellidos, email, pass, sexo, telefono, es_admin) VALUES ('$nombre', '$apellidos', '$correo', '$contrasena', '$sexo', '$telefono', '$es_admin')";
 
     if(mysqli_query($conn, $query)){
         header("Location: ../index.html");

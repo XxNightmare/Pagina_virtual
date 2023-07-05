@@ -13,79 +13,76 @@
 
 <body>
     <section class="vh-100 bg-image"
-        style="background-image: url('https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=694&q=80');">
-        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+        style="background-image: url('https://media.vogue.mx/photos/61a0f46586155348e0ee1a0f/master/pass/SS-22-holder%20(1).jpg');">
+        <div class="mask d-flex align-items-center h-100">
             <div class="container h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col-12 col-md-9 col-lg-7 col-xl-6">
                         <div class="card" style="border-radius: 15px;">
-                            <div class="card-body p-5">
-                                <h2 class="text-uppercase text-center mb-5">Crear una cuenta</h2>
-                                <form method="POST" action="php/register.php">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <div class="form-outline">
-                                                <input type="text" id="nombre_usuario" name="nombre_usuario"
-                                                    placeholder="Nombre" class="form-control form-control-lg" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <div class="form-outline">
-                                                <input type="text" id="apellidos_usuario" name="apellidos_usuario"
-                                                    placeholder="Apellidos" class="form-control form-control-lg" />
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="card-body p-5" style="background-color: #F9FBE7;">
+                                <h2 class="text-uppercase text-center mb-5"
+                                    style="color: rgb(0,0,0,0.5); font-weight: 700;">Crear una cuenta</h2>
+                                <h4 style="text-align: center; color: rgb(0,0,0,0.5);">Por favor llena toda la informacion que se te solicita</h4>
 
+                                <form method="POST" action="php/register.php">
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="email_usuario" name="email_usuario" placeholder="Correo"
+                                        <input style="background-color: #fefffa;" type="text" id="nombre_usuario"
+                                            name="nombre_usuario" placeholder="Nombre"
                                             class="form-control form-control-lg" />
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="pass_usuario" name="pass_usuario"
-                                            placeholder="Contraseña" class="form-control form-control-lg" />
+                                        <input style="background-color: #fefffa;" type="text" id="apellidos_usuario"
+                                            name="apellidos_usuario" placeholder="Apellidos"
+                                            class="form-control form-control-lg" />
                                     </div>
 
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <div class="form-outline">
-                                                <select class="select form-control-lg">
-                                                    <option value="" selected disabled>Sexo:</option>
-                                                    <option value="M">Masculino</option>
-                                                    <option value="F">Femenino</option>
-                                                    <option value="N">Otro</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <input type="text" id="phone_usuario" name="phone_usuario"
-                                                placeholder="Numero Telefonico" class="form-control form-control-lg" />
-                                        </div>
+                                    <div class="form-outline mb-4">
+                                        <input style="background-color: #fefffa;" type="text" id="email_usuario"
+                                            name="email_usuario" placeholder="Correo"
+                                            class="form-control form-control-lg" />
                                     </div>
 
-                                    <h6 class="mb-2 pb-1" style="text-align: center;">Es administrador: </h6>
-                                    <div class="form-check" style="text-align: center;">
-                                        <label class="form-check-label" for="es_admin">
-                                            <input type="radio" name="es_admin"
-                                                id="es_admin" value="es_admin" />
-                                            SI</label>
+                                    <div class="form-outline mb-4">
+                                        <input style="background-color: #fefffa;" type="password" id="pass_usuario"
+                                            name="pass_usuario" placeholder="Contraseña"
+                                            class="form-control form-control-lg" />
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <select class="select form-control form-control-lg">
+                                            <option value="" selected disabled>Sexo:</option>
+                                            <option value="M">Masculino</option>
+                                            <option value="F">Femenino</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="phone_usuario" name="phone_usuario"
+                                            placeholder="Numero Telefonico" class="form-control form-control-lg" />
+                                    </div>
+
+                                    <div class="form-outline mb-4">
+                                        <select class="select form-control form-control-lg">
+                                            <option value="" selected disabled>Administrador:</option>
+                                            <option value="1">Si</option>
+                                            <option value="0">No</option>
+                                        </select>
                                     </div>
 
                                     <div class="d-flex justify-content-center">
-                                        <button type="submit" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Registrar</button>
+                                        <button type="submit"
+                                            class="btn form-control btn-outline-warning btn-lg">Registrar</button>
                                     </div>
+
+                                    <p style="margin-top: 1rem; text-align: center;">Ya tengo una cuenta <a
+                                            href="index.html" class="link-info">Regresar</a></p>
+                                </form>
                             </div>
-
-
-                            <p style="margin-top: 1rem; text-align: center;">Ya tengo una cuenta <a href="index.html"
-                                    class="link-info">Regresar</a></p>
-                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 </body>

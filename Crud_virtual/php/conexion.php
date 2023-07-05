@@ -3,7 +3,7 @@
 $servidor = "localhost"; // Cambiar si es necesario
 $usuario = "root"; // Cambiar si es necesario
 $contrasena = ""; // Cambiar si es necesario
-$base_datos = "veterinaria"; // Cambiar si es necesario
+$base_datos = "vanshop"; // Cambiar si es necesario
 
 // Crear conexión
 $conn = mysqli_connect($servidor, $usuario, $contrasena, $base_datos);
