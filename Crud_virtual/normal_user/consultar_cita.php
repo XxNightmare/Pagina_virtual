@@ -44,16 +44,16 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] != 'usuario') {
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
             <a href="nosotros.php" class="logo d-flex align-items-center">
-                <h1>VETERIOC<span>.</span></h1>
+                <h1>VanShop</h1>
             </a>
 
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a href="nosotros.php">Nosotros</a></li>
-                    <li><a href="hacer_cita.php">Hacer una cita</a></li>
-                    <li><a href="consultar_cita.php" class="active">Consultar una cita</a></li>
+                <li><a href="nosotros.php">Nosotros</a></li>
+                    <li><a href="hacer_cita.php">Comprar</a></li>
+                    <li><a href="consultar_cita.php" class="active">Carrito</a></li>
                     <li><a href="../php/cerrar_sesion.php">Salir</a></li>
                 </ul>
             </nav><!-- .navbar -->
@@ -63,17 +63,12 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] != 'usuario') {
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero">
         <div style="min-height: 1vh; padding: 50px 0;" id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-item active" style="background-image: url(https://images.unsplash.com/photo-1488015795646-7e22a773d72a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)"></div>
-            <div class="carousel-item" style="background-image: url(https://images.unsplash.com/photo-1607931042288-0c82960d4afc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)"></div>
-            <div class="carousel-item" style="background-image: url(https://images.unsplash.com/photo-1605152914052-910ae67ca55d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)"></div>
-            <div class="carousel-item" style="background-image: url(https://images.unsplash.com/photo-1494870363241-b5225be3dada?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)"></div>
-            <div class="carousel-item" style="background-image: url(https://plus.unsplash.com/premium_photo-1663012999448-7f5ec5324f4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80)"></div>
+            <div class="carousel-item active" style="background-image: url(https://img2.rtve.es/i/?w=1600&i=1599041762848.jpg)"></div>
         </div>
     </section><!-- End Hero Section -->
 
     <main id="main">
         <!-- ======= Constructions Section ======= -->
-        <h1 style="text-align: center; text-transform: uppercase; padding: 1rem;">Hacer una cita</h1>
         <section style="padding: 35px 0 0 0;" id="constructions" class="constructions">
             <div class="container" data-aos="fade-up">
                 <form action="../php/normal_user_act/look_animal.php" method="post">
@@ -132,7 +127,7 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] != 'usuario') {
         <div class="footer-legal text-center position-relative">
             <div class="container">
                 <div class="copyright">
-                    &copy; Copyright <strong><span>VETERIOC</span></strong>. Todos los derechos reservados
+                    &copy; Copyright <strong><span>VanShop</span></strong>. Todos los derechos reservados
                 </div>
             </div>
         </div>

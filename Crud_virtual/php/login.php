@@ -20,7 +20,7 @@ if (mysqli_num_rows($resultado) > 0) {
     // El usuario fue encontrado
     $usuario = mysqli_fetch_assoc($resultado);
 
-    if ($usuario['admin'] == 1) {
+    if ($usuario['es_admin'] == 1) {
         // El usuario es administrador
         $_SESSION['usuario'] = $usuario['email']; // Almacenamos el nombre del usuario en la sesión
         $_SESSION['rol'] = 'admin'; // Almacenamos el rol del usuario en la sesión
