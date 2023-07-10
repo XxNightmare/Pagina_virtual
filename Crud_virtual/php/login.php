@@ -25,7 +25,7 @@ if (mysqli_num_rows($resultado) > 0) {
         $_SESSION['usuario'] = $usuario['email']; // Almacenamos el nombre del usuario en la sesión
         $_SESSION['rol'] = 'admin'; // Almacenamos el rol del usuario en la sesión
         echo "<script>alert('Administrador');</script>";
-        header("Location: ../admin/agregar_animal.php");
+        header("Location: ../admin/agregar_productos.php");
         exit();
     } else {
         // El usuario no es administrador
@@ -40,4 +40,3 @@ if (mysqli_num_rows($resultado) > 0) {
     echo "<script>alert('Usuario no encontrado');</script>";
 }
 }
-?>

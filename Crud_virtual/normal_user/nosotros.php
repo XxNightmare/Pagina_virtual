@@ -52,8 +52,8 @@ if (!isset($_SESSION['rol']) || $_SESSION['rol'] != 'usuario') {
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a href="nosotros.php" class="active">Nosotros</a></li>
-                    <li><a href="hacer_cita.php">Comprar</a></li>
-                    <li><a href="consultar_cita.php">Carrito</a></li>
+                    <li><a href="compras.php">Comprar</a></li>
+                    <li><a href="carrito.php">Carrito</a></li>
                     <li><a href="../php/cerrar_sesion.php">Salir</a></li>
                 </ul>
             </nav><!-- .navbar -->
